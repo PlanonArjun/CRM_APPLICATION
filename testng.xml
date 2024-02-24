@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<include name="RegressionSuite" />
+			<include name="SmokeSuite" />
+		</run>
+
+	</groups>
+
+	<listeners>
+		<listener class-name="com.vt.listeners.ListenerClass" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="xmlbrowser" value="Edge"></parameter>
+		<classes>
+			<class name="vtigerLeadTests.CreateLeadTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
