@@ -39,4 +39,4 @@ jobs:
           push: true
           tags: |
             dockerarjjun/crm_application:${{ github.actor }}-${{ github.run_id }}
-            dockerarjjun/crm_application_latestpush:latest
+            dockerarjjun/crm_application_latestpush:${{ github.actor }}-latest
