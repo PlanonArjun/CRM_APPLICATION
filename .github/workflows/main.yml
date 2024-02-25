@@ -3,7 +3,7 @@ name: CRM_Application Build
 on:
   push:
     branches:
-      - dockerSonar
+      - main
 
 jobs:
   build:
