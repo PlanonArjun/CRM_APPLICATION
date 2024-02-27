@@ -3,7 +3,7 @@ name: CRM_Application Build
 on:
   push:
     branches:
-      - develop
+      - develop-githubrunertag
 
 jobs:
   build:
@@ -40,3 +40,5 @@ jobs:
           tags: |
             dockerarjjun/crm_application:${{ github.actor }}-${{ github.run_id }}
             dockerarjjun/crm_application_latestpush:${{ github.actor }}-latest
+            dockerarjjun/crm_application_githubtag:${{ github.actor }}-$GITHUB_RUN_NUMBER
+
